@@ -1,0 +1,845 @@
+/* css for all */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* css for header */
+#header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px -2px gray;
+    position: relative;
+    z-index: 2px;
+}
+
+#header .header-inner{
+    width: 80%;
+    height: 100%;
+    display: flex;
+}
+
+#header .header-inner .logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#header .header-inner .nav{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Archivo', sans-serif;
+}
+
+.main-menu>li{
+    width: fit-content;
+    margin-right: 10px;
+    padding: 5px;
+    position: relative;
+}
+
+.main-menu>li>a{
+    text-decoration: none;
+    color: #020516;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.main-menu>li>a.active{
+    color: #0b249e;
+    text-shadow: 1px 1px #f5eeee;
+}
+
+
+.sub-menu{
+    display: none;
+}
+
+.main-menu>li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #F4F4F4;
+    padding: 10px;
+    width: max-content;
+}
+
+.main-menu>li:hover .sub-menu li{
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.main-menu>li:hover .sub-menu li a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* CSS for slider */
+#slider{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    /* position: relative; */
+}
+
+.slide-item{
+    width: 100%;
+    height: 100%;
+}
+
+.slide-item img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+span .fa-circle-chevron-left{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: calc(350px - 15px);
+    left: 10px;   
+    color: #fff;
+    font-size: 30px;
+    align-items: center;
+}
+
+span .fa-circle-chevron-right{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: calc(350px - 15px);
+    right: 10px; 
+    color: #fff;
+    font-size: 30px;
+}
+
+/* Css for intro */
+#intro{
+    display: flex;
+    justify-content: center;
+    padding: 75px 0;
+}
+
+.intro-inner{
+    width: 80%;
+}
+
+.intro-inner h3{
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-weight: 550;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro-inner h4{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 550;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.intro-content .intro-item{
+    width: 28%;
+    padding: 18px;
+    border: 1px solid gray;
+}
+
+.intro-content .intro-item img{
+    width: 100%;
+    height: 230px;
+}
+
+.intro-content .intro-item p{
+    text-align: justify;
+    margin-top: 20px;
+    line-height: 22.5px;
+}
+
+/* CSS for form */
+#form{
+    background-image: linear-gradient(180deg, #000D75 0%, #65379A 100%);
+    padding: 75px 0;
+}
+
+#form .form-inner{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.form-box{
+    width: 50%;
+    display: flex;
+    margin: auto;
+}
+
+.form-title{
+    margin-bottom: 20px;
+}
+
+.form-sub-box .form-title h2{
+    color: #FFF;
+    font-size: 27px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.scholarship{
+    width: 500px;
+    height: 63px;
+    line-height: 63px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.scholarship a{
+    font-size: 30px;
+    color: #F5EC10;
+    border: 2px solid #F5EC10;
+    text-decoration: none;
+    padding: 12px 25px;
+    text-transform: uppercase;
+}
+
+.form-text{
+    width: 460px;
+    margin: 0 20px;
+}
+
+.form-text .sub-form-text{
+    width: 460px;
+}
+
+.sub-form-text .text{
+    width: 431px;
+    margin: 0 0 15px 0;
+    background-color: #FFFFFF;
+}
+
+.sub-form-text .text5{
+    height: 100px;
+}
+
+.sub-form-text .text textarea,
+.sub-form-text .text input{
+    width: 100%;
+    height: 100%;
+    padding: 13px;
+}
+
+.sub-form-text .text textarea{
+    padding: 14px;
+}
+
+.form-text .register-btn{
+    width: 100%;
+    height: 43.2px;
+    background-color: #EDB017;
+    margin-top: 74px;
+    text-align: center;
+    line-height: 43.2px;
+    border-radius: 4px;
+}
+
+.form-text .register-btn p{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.form-text .register-btn:hover{
+    color: #FFFFFF;
+    background-color: #008FCA;
+}
+
+.form-img{
+    width: 50%;
+    display: flex;
+}
+
+.form-img img {
+    width: 100%;
+    height: 100%;
+}
+
+#form .ratio-box{
+    width: 75%;
+    display: flex;
+    margin-left: 230px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.ratio-box .ratio-item{
+    width: calc(100% / 4);
+    display: flex;
+    position: relative;
+}
+
+.ratio-item .border-left{
+    width: 4px;
+    background-color: #FFFFFF;
+    height: 40px;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.ratio-item .ratio-sub-box{
+    padding-left: 30px;
+}
+
+.ratio-sub-box .ratio-number{
+    margin-bottom: 30px;
+}
+
+.ratio-sub-box .ratio-number .number{
+    font-size: 70px;
+    color: #FFC307;
+    font-weight: 550;
+    margin-right: 10px;
+}
+
+.ratio-sub-box .ratio-number span{
+    color: #FFC307;
+    font-weight: 550;
+    font-size: 22px;
+}
+
+.ratio-sub-box p{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* CSS for Description */
+#description{
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+#description .desc-sub{
+    display: flex;
+    margin: auto;
+    max-width: 70%;
+    justify-content: center;
+}
+
+.desc-item1{
+    padding: 20px;
+    border-right:3px solid #FF7B06 ;
+}
+
+.desc-item2{
+    display: flex;
+}
+
+.desc-item-sub1{
+    width: 350px;
+    height: 183px;
+    text-align: center;
+}
+
+.desc-item-sub1 .desc-heading{
+    color: #0B249E;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 0%);
+}
+
+.desc-item-sub1 .desc-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 40px;
+    line-height: 38px;
+}
+
+.desc-item-sub2{
+    width: 750px;
+    margin-left: 20px;
+    padding: 10px;  
+}
+
+.desc-item-sub2 .slogan1{
+    text-align: center;
+    width: 91%;
+}
+
+.desc-item-sub2 .slogan1 .slogan-write{
+    color: #433F3F;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
+.desc-item-sub2 .slogan2{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.slogan2 .slogan-btn{
+    border-radius: 4px;
+    background-color: #0C9841;
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+.slogan2 .slogan-btn a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.slogan2 .slogan-btn:hover{
+    background-color: #DA6A07;
+    color: #fff;
+    transition: 0.4s;
+}
+
+/* CSS for future */
+#future{
+    width: 100%;
+    background-image: linear-gradient(180deg, #1936B4 0%, #129EBA 100%);
+    display: flex;
+    padding: 0 0 30px 0;
+}
+
+#future .future-container{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    max-height: 600px;
+    align-items: center;
+}
+
+.future-container .future-vid{
+    padding: 20px;
+}
+
+.future-container .future-desc-wrapper{
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.future-heading{
+    margin-bottom: 20px;
+}
+
+.future-heading .future-title{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.future-item{
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.future-item .future-icon {
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #fff;
+    margin-right: 20px;
+}
+
+.future-item .future-icon i{
+    color: #0B249E;
+    font-size: 45px;
+    line-height: 80px;
+}
+
+.future-item .future-item-con{
+    width: 460px;
+    height: 95px;
+}
+
+.future-item-con .future-title{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.future-item-con .future-desc{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+/* CSS for Question-Container */
+#question-container{
+    width: 100%;
+    background-color: #fff;
+    background-image: url("https://aptech.vn/wp-content/uploads/2020/10/Group-44.png");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+#question-container .quesion-sub{
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+    margin: 60px 0 60px 0;
+    width: 100%;
+}
+
+.quesion-sub .question-con{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.question-con .question-title{
+    margin-bottom:  6px;
+}
+
+.question-con .question-title p{
+    color: #111633;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.question-con .question-title-sub{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 45px;
+}
+
+.question-btn{
+    text-align: center;
+}
+
+.question-btn .question-btn-main{ 
+    background-color: #FFF006;  
+    margin-top: 45px;
+    display: inline-block;
+    padding: 15px 45px;
+}
+
+.question-btn .question-btn-main a{
+    color: #111633;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* CSS for Reason */
+#reason{
+    background-image: linear-gradient(180deg, #4A1BD4 0%, #17C2DC 100%);
+    padding: 75px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#reason .reason-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    width: 80%;
+}
+
+.reason-wrapper .reason-title {
+    width: 100%;
+    height: 97px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reason-title .reason-heading {
+    height: 54px;
+    line-height: 54px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.reason-title .reason-border-bottom{
+    background-color: #fff;
+    height: 4px;
+    width: 200px;
+    margin: auto;
+}
+
+.reason-cards{
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+
+.reason-cards .reason-cards-list-a{
+    margin-right: 15px;
+}
+
+.reason-card-item .reason-icon{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    margin-right: 15px;
+}
+
+.reason-icon img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.reason-card-item{
+    display: flex;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 30px 15px;
+}
+
+.reason-card-item .reason-card-desc{
+    width: 100%;
+    height: 100%;
+}
+
+.mt-54{
+    margin-top: 54px;
+}
+
+.reason-card-desc .reason-card-title{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 10px
+}
+
+.reason-card-desc .reason-card-text{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.reason-cards .reason-cards-list-b{
+    margin-left: 15px;
+}
+
+.reason-wrapper .advise-btn{
+    width: 100%;
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.advise-btn .advise-btn-main{
+    background-color: #05A141;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.advise-btn .advise-btn-main span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.advise-btn .advise-btn-main:hover{
+    background-color: #FF7B06;
+    transition: 0.4s;
+}
+
+/* CSS for NEWS-CONTAINER */
+#aptech-news{
+    width: 100%;
+    background-color: #E9E9E9B5;
+    padding: 0 0 50px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#aptech-news .news-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 80px;
+}
+
+.news-container .news-heading{
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.news-heading .news-border{
+    width: 80px;
+    height: 4px;
+    background-color: #ff712b;
+    display: inline-block;
+}
+
+.news-heading .news-heading-main p {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.news-container .news-cards-list{
+    display: flex;
+    height: 100%;
+}
+
+.news-cards-list .news-card-item{
+    padding: 0 15px;
+    width: 100%;
+}
+
+.news-card-item .news-img{
+    padding: 5px;
+    background-color: #fff;
+}
+
+.news-card-item .news-img img{
+    width: 100%;
+}
+
+.news-card-item:hover .news-img img{
+    opacity: 0.7;
+}
+
+.news-card-item .news-content{
+    padding: 0 20px 20px;
+    background-color: #fff;
+}
+
+.news-content-meta .news-content-date a,
+.news-content .news-content-meta{
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #0B249E;
+    font-size: 13px;
+}
+
+.news-content-meta .news-content-date{
+    line-height: 25px;
+}
+
+.news-content .news-content-meta i{
+    padding-right: 5px;
+}
+
+.news-content .news-content-title{
+    font-size: 15px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.news-content .news-content-title p{
+    width: 100%;
+}
+
+.news-content .news-btn-wrapper{
+    background-color: #2575fc;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 22px;
+}
+
+.news-content .news-btn-wrapper:hover{
+    background-color: #0350d2;
+    transition: .4s ease;
+}
+
+.news-btn-wrapper .news-btn{
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    
+}
+
+/* CSS for Partner-Aptech */
+#partner{
+    padding: 24px 0 60px 0;
+    display: flex;
+    /* position: relative; */
+    height: 380px;
+}
+
+#partner .partner-container{
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+}
+
+.partner-container .partner-logo-list{
+    display: flex;
+    justify-content: center;
+}
+
+.partner-logo-list .partner-logo-item{
+    display: flex;
+    width: calc(80%/5);
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.partner-logo-item .partner-logo-con{
+    margin: 0 20px 20px;
+}
+
+.partner-logo-list .partner-logo-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.partner-container .partner-heading{
+    margin-bottom: 30px;
+    height: 75px;
+    text-align: center;
+}
+
+.partner-heading p{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 42px;
+}
